@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        h1{
+            text-align: center;
+            background-color: blueviolet;
+            color: whitesmoke;
+        }
+        .container
+        {
+            height: 100px;
+            background-color: blue;
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+        button{
+            width: 100%;
+            height: 30px;
+            margin-top: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Welcome to Jquery Class</h1>
+             
+    <div class="container">
+        Header
+    </div>
+
+    <button class="hide">Hide</button>
+    <button class="show">Show</button>
+    <button class="toggle">toggle</button>
+
+
+    <button class="slideup">Up</button>
+    <button class="slidedown">Down</button>
+
+    <script>
+
+        $(document).ready(function(){
+            // hide and show
+            $('.hide').click(function(){
+                $('.container').hide(2000);
+            })
+            $('.show').click(function(){
+                $('.container').show(2000);
+            })
+            $('.toggle').click(function(){
+                $('.container').toggle(2000);
+            })
+
+            //slider
+            $('.slideup').click(function(){
+                $('.container').slideUp(2000);
+            })
+            $('.slidedown').click(function(){
+                $('.container').slideDown(2000);
+            })
+            $('.slidetoggle').click(function(){
+                $('.container').slideToggle(2000);
+            })
+        
+
+
+        })
+
+
+
+
+
+//         $(document).ready(function(){
+//   $("#hide").click(function(){
+//     $("p").hide();
+//   });
+//   $("#show").click(function(){
+//     $("p").show();
+//   });
+// });
+    </script>
+
+</body>
+</html>
